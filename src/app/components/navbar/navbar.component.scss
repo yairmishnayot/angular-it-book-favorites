@@ -1,0 +1,20 @@
+#nav{
+  width: 100%;
+  background: #F7F5EB;
+  padding: 30px;
+  text-align: center;
+}
+
+#nav a{
+  text-decoration: none;
+  color: #A0C3D2;
+  font-size: 20px;
+  padding: 10px;
+  margin-inline: 20px;
+
+  &.active{
+    background: #A0C3D2;
+    border-radius: 10px;
+    color: #F7F5EB;
+  }
+}
