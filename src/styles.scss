@@ -27,6 +27,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+*{
+  font-family: Robot, serif;
+}
 body {
   line-height: 1;
 }
@@ -38,7 +41,6 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
   content: none;
 }
 table {
@@ -46,6 +48,5 @@ table {
   border-spacing: 0;
 }
 
-body{
-  background: #A0C3D2;
-}
+html, body { height: 100%; }
+//body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

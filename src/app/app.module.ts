@@ -8,6 +8,9 @@ import { BooksComponent } from './pages/books/books.component';
 import { FavoritesComponent } from './pages/favorites/favorites.component';
 import {HttpClientModule} from "@angular/common/http";
 import { BookComponent } from './components/book/book.component';
+import { BooksTableItemComponent } from './components/books-table-item/books-table-item.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MaterialModule} from "./material/material.module";
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { BookComponent } from './components/book/book.component';
     NavbarComponent,
     BooksComponent,
     FavoritesComponent,
-    BookComponent
+    BookComponent,
+    BooksTableItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

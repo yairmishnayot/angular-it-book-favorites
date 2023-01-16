@@ -1,1 +1,4 @@
-<p>favorites works!</p>
+<div class="favorites">
+  <app-books-table-item *ngFor="let favorite of favorites" [book]="favorite"></app-books-table-item>
+</div>
+

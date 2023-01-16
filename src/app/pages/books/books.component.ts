@@ -9,6 +9,7 @@ import {Book} from "../../Interfaces/Book";
 })
 export class BooksComponent implements OnInit{
   books: Book[]
+
   constructor(private http: HttpClient) {
     this.books = [];
   }

@@ -1,0 +1,13 @@
+.book-table-item{
+  background: #F7F5EB;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 20px;
+  max-width: 350px;
+  max-height: 500px;
+
+  .add-to-favorites-btn{
+    margin-top: 20px;
+  }
+}
