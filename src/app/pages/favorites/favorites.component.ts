@@ -19,4 +19,10 @@ export class FavoritesComponent {
       this.favorites = res
     })
   }
+
+  deleteFavorite(favorite: Book | undefined){
+    this.http.delete(`http://localhost:5000/books/${favorite?.id}`).subscribe(() => {
+      this.favorites = this.favorites.filter(f => f.id !== favorite?.id);
+    })
+  }
 }

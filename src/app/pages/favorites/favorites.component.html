@@ -1,4 +1,4 @@
 <div class="favorites">
-  <app-books-table-item *ngFor="let favorite of favorites" [book]="favorite"></app-books-table-item>
+  <app-books-table-item *ngFor="let favorite of favorites" [book]="favorite" [isFavorite]="true" (delete)="deleteFavorite(favorite)"></app-books-table-item>
 </div>
 

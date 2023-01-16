@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Book} from "../../Interfaces/Book";
 import {HttpClient} from "@angular/common/http";
 
@@ -11,11 +11,16 @@ export class BooksTableItemComponent {
   constructor(private http: HttpClient) {
   }
   @Input() book: Book | undefined
+  @Input() isFavorite: boolean = false
+  @Output() delete = new EventEmitter()
 
   addToFavorites(book: Book | undefined){
-    console.log(book);
     this.http.post('http://localhost:5000/books', book).subscribe((res)=>{
       console.log(res);
     })
+  }
+
+  onDelete(book: Book | undefined){
+    this.delete.emit(book);
   }
 }

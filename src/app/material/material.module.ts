@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from "@angular/material/icon";
 
 
 
@@ -14,7 +15,8 @@ import {MatCardModule} from '@angular/material/card';
   exports:[
     MatProgressSpinnerModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ]
 })
 export class MaterialModule { }
