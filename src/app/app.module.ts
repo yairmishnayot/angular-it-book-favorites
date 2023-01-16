@@ -7,7 +7,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { BooksComponent } from './pages/books/books.component';
 import { FavoritesComponent } from './pages/favorites/favorites.component';
 import {HttpClientModule} from "@angular/common/http";
-import { BookComponent } from './components/book/book.component';
 import { BooksTableItemComponent } from './components/books-table-item/books-table-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from "./material/material.module";
@@ -18,7 +17,6 @@ import {MaterialModule} from "./material/material.module";
     NavbarComponent,
     BooksComponent,
     FavoritesComponent,
-    BookComponent,
     BooksTableItemComponent
   ],
   imports: [
